@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="http">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body,h1{
+			transition: 1s;
+			margin: 0;
+			height: 100%;
+		}
+		body,html{
+			height: 100%;
+			margin:0;
+		}
+		#demo{
+			font-family: Lucida Console;
+		}
+		.backimg{
+			background-image: url('bg.jpg');
+			min-height:90%;
+			background-position:center;
+			background-size: cover;
+			position: relative;
+			color: white;
+			transition: 1s;
+			font-family: comfortaa;
+		}
+		.titl{
+			position: absolute;
+			top:50%;
+			transition: 1s;
+			left:50%;
+			/*margin: 20px;*/
+			transform: translate(-50%, -50%);
+			text-align: center;
+			text-shadow: 0px 0px 10px black;
+		}
+		.bottm{
+			position: absolute;
+			bottom: 15px;
+			left:16px;
+			/*margin: auto;*/}
+		hr{margin: auto;
+			width: 55%;}
+		h2,h3,h4,h5{text-align: center;
+			margin: 5px;}
+		h1:hover{font-size: 35px;}
+		.panal {
+			transition: .5s;
+ 			background-color: #333;
+ 			overflow: hidden;
+		}
+		.panal a {
+			transition: .5s;
+  			float: left;
+ 			display: block;
+  			color: #f2f2f2;
+  			text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.panal a:hover {
+ 			background-color: #ddd;
+  			color: black;
+		}
+		.panal a.active {
+			transition: .5s;
+  			background-color: #4CAF50;
+  			color: white;
+		}
+		.panal .icon {
+			transition: .5s;
+ 			display: none;
+		}
+		@media screen and (max-width: 600px) {
+     		.panal a:not(:first-child) {
+     			transition: .5s;
+     			display: none;}
+			.panal a.icon {
+				transition: .5s;
+    			float: right;
+    			display: block;
+  			}
+		}
+		@media screen and (max-width: 600px) {
+  			.panal.responsive {
+  				transition: .5s;
+  				position: relative;}
+  			.panal.responsive a.icon {
+    		transition: .5s;
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+  		}
+  			.panal.responsive a {
+    			transition: .5s;
+    			float: none;
+    			display: block;
+    			text-align: left;
+  				}
+  			}
+	</style>
+	<script type="text/javascript">
+		function myFunction() {
+ 	 	var x = document.getElementById("myTopnav");
+  		if (x.className === "panal") {
+    	x.className += " responsive";
+  		} else {
+    	x.className = "panal";
+  	}
+	} 
+	var countDownDate = new Date("Aug 24, 2019 15:37:25").getTime();
+	var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000); 
+	</script>
+	
+	<title>Digimatazz-Home</title>
+</head>
+<body>
+	<div class="panal" id="myTopnav">
+  			<a href="home.html" class="active">Home</a>
+  			<a href="events/events.html">Events</a>
+  			<a href="http://prajyotiniketan.edu.in">Contact</a>
+  			<a href="about">About</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i></a>
+		</div>
+	<div class="backimg">
+    	<div class="titl">
+			<hr>
+			<h1 style="font-family: Tele marines">DIGIMATAZZ</h1>
+			<hr>
+			<p style="margin: 30px;">coming soon</p>
+			<p id="demo"></p>
+			<h3>Prajyoti Niketan</h3>
+			<h4>College</h4>
+			<h5>Pudukad</h5>
+		</div>
+		<div class="bottm">
+			<p>wait for it</p>
+		</div>
+	</div>
+</body>
+</html>
