@@ -83,6 +83,12 @@ p{
 .para i{
 	padding-left: 8px;
 }
+.sect a{
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
 .panal {
  	background-color: #000;
  	overflow: hidden;
