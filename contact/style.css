@@ -16,14 +16,6 @@ body,html{
 	width: 100%;
 	margin:0;
 }
- img{
- 	padding-top:10%;
- 	display: block;
- 	height: 80px;
- 	width: auto;
- 	margin-left: auto;
- 	margin-right: auto;
- }
 .backgd{
   	background-image: url('bg.jpg');
 	min-height:100%;
@@ -33,6 +25,14 @@ body,html{
 	position: relative;
 	color: white;
 }
+ img{
+ 	padding-top:10%;
+ 	display: block;
+ 	height: 80px;
+ 	width: auto;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
 .logo{
 	position: absolute;
 	transform: translateY(-50%);
