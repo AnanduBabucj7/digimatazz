@@ -139,6 +139,7 @@ h2{
 .service img{
   width: 100px;
   color: green;
+  border-radius: 15px;
   margin-bottom: 30px;
 }
 .service h2{
