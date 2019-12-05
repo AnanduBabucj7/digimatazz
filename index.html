@@ -51,6 +51,7 @@
 		.bottm{
 			position: absolute;
 			bottom: 15px;
+			background:#123123;
 			left:16px;}
 		h3,h5{
 			text-align: center;
@@ -201,9 +202,6 @@ var countDownDate = new Date("Aug 26, 2019 10:30:00").getTime();
     document.getElementById("demo").innerHTML = "Concluded";
   }
 }, 1000); 
-	function overalrt(){
-		alert("Registration cloused !!!!! <br> You can still explore our site ");
-	}
 	</script>
 	
 	<title>Digimatazz-Home</title>
@@ -240,6 +238,9 @@ var countDownDate = new Date("Aug 26, 2019 10:30:00").getTime();
 		<div class="bottm">Developer : Anandu Babu</div>
 	</div>
 	<script type="text/javascript">
+			function overalrt(){
+		alert("Registration cloused !!!!! You can still explore our site ");
+	}
 		var lod=document.getElementById('loader');
 		function loaded(){
 			lod.style.display='none';
